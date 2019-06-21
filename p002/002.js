@@ -6,6 +6,7 @@ result = b;
 let counter = 1;
 
 for (let i = 1; i <= 50; i++) {
+    if()
   console.log(`${counter}. ${result}`);
   result = a + b;
   a = b;

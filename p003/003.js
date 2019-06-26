@@ -1,3 +1,10 @@
+/**
+ * @author Alexi Jamal
+ *
+ * @description
+ *
+ */
+
 let num = 600851475143;
 let divisor = 2;
 

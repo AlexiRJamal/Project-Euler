@@ -1,1 +1,1 @@
-console.log(600851475143 / 7);
+console.log(22 / 3);

@@ -6,21 +6,20 @@
  * What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
  */
 
-let lcd = 2521,
-  divisor = 2,
-  min = lcd,
-  arr = [];
+let lcd = 1;
 
 for (let i = 1; i <= 20; i++) {
-  arr.push(i);
+  lcd *= Math.floor(i, gcd(i, lcd));
 }
 
-arr.forEach(number => {
-  debugger;
-  if (lcd % number != 0) {
-    lcd++;
+function gcd(num1, num2) {
+  while (num2) {
+    let temp = num2;
+    num2 = num1 % num2;
+    num1 = temp;
   }
-});
+  return num1;
+}
 
 console.log(lcd);
 
